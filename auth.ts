@@ -21,7 +21,7 @@ export const {
   callbacks: {
     jwt({ token, profile }) {
       if (profile) {
-        token.id = profile.id
+        token.id = profile.sub
         token.image = profile.avatar_url || profile.picture
       }
       return token
@@ -29,6 +29,7 @@ export const {
     session: ({ session, token }) => {
       if (session?.user && token?.id) {
         session.user.id = String(token.id)
+        
       }
       return session
     },
