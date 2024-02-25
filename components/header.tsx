@@ -7,6 +7,7 @@ import { Button, buttonVariants } from '@/components/ui/button'
 import {
   IconGoogle,
   IconNextChat,
+  IconOpenAI,
   IconSeparator,
   IconVercel
 } from '@/components/ui/icons'
@@ -28,8 +29,8 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/" target="_blank" rel="nofollow">
-          <IconNextChat className="size-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden size-6 mr-2 dark:block" />
+          <IconOpenAI className="mr-2 size-6 dark:hidden"  />
+          <IconOpenAI className="hidden mr-2 size-6 dark:block" />
         </Link>
       )}
       <div className="flex items-center">

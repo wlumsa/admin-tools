@@ -1,18 +1,12 @@
 import NextAuth, { type DefaultSession } from 'next-auth'
 import Google from "next-auth/providers/google";
 
-declare module 'next-auth' {
-  interface Session {
-    user: {
-      /** The user's id. */
-      id: string
-    } & DefaultSession['user']
-  }
-}
 
 export const {
   handlers: { GET, POST },
-  auth
+  auth,
+  signIn,
+  signOut,
 } = NextAuth({
   providers: [Google({
     clientId:process.env.GOOGLE_CLIENT_ID,
