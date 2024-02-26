@@ -13,14 +13,12 @@ export const metadata = {
   //metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
   metadataBase: new URL(`http://localhost:3000`),
   title: {
-    default: 'Next.js AI Chatbot',
-    template: `%s - Next.js AI Chatbot`
+    default: 'MSA Utilties ',
+    template: `%s - MSA Utilties`
   },
   description: 'An AI-powered chatbot template built with Next.js and Vercel.',
   icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png'
   }
 }
 
