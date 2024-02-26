@@ -7,7 +7,7 @@ import { IconArrowRight } from '@/components/ui/icons'
 const exampleMessages = [
   {
     heading: 'Generate tiktok ideas',
-    message: `I want you to act as a Muslim social media influencer. You will create ideas for short form content for various platforms such as Instagram Reels, Tiktok or YouTube Shorts and engage with followers in order to increase brand awareness and promote products or services. I want you to think of ideas of short form content which can be used to promote {ENTER_EVENT + DESC}. Your target audience is young Muslim universtity students with an average age of 18-22. Keep in mind to adhere to Islamic teachings and principles such as not having any music in the reels `
+    message: `I want you to act as a Muslim social media influencer. You will create ideas for short-form content for various platforms such as Instagram Reels, TikTok, or YouTube Shorts. Please think of ideas for short-form content that can be used to promote {ENTER_EVENT + DESC}. Your target audience is young Muslim university students with an average age of 18-22. Keep in mind to adhere to Islamic teachings and principles such as not having any music in the reels  `
   },
   {
     heading: 'Draft an email',
@@ -17,8 +17,8 @@ const exampleMessages = [
 
 export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
   return (
-    <div className="mx-auto max-w-2xl px-4">
-      <div className="rounded-lg border bg-background p-8">
+    <div className="max-w-2xl px-4 mx-auto">
+      <div className="p-8 border rounded-lg bg-background">
         <h1 className="mb-2 text-lg font-semibold">
           Welcome to MSA AI Chatbot!
         </h1>
@@ -42,7 +42,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Please remember to fear Allah and not use it to cheat on school work.
           You can start a conversation here or try the following examples:
         </p>
-        <div className="mt-4 flex flex-col items-start space-y-2">
+        <div className="flex flex-col items-start mt-4 space-y-2">
           {exampleMessages.map((message, index) => (
             <Button
               key={index}
