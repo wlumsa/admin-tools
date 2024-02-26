@@ -12,7 +12,7 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      Currently using GPT 3.5 Turbo, view all avaliable possible {' '}
+      Currently using GPT 4.0 Turbo, view all avaliable possible {' '}
       <ExternalLink href="https://openai.com/pricing">OpenAI models</ExternalLink> or{' '}
       <ExternalLink href="https://sdk.vercel.ai/docs/guides">other avaliable models
       </ExternalLink>
