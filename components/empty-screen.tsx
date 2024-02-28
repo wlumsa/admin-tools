@@ -11,7 +11,7 @@ const exampleMessages = [
   },
   {
     heading: 'Draft an email',
-    message: `Draft an email to my {ENTER CCompany} about the following: \n`
+    message: `Draft an email to my {ENTER Company} about the following: \n`
   }
 ]
 
@@ -34,7 +34,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           </ExternalLink>
           , and{' '}
           <ExternalLink href="https://github.com/f/awesome-chatgpt-prompts">
-            Faith on Github
+            Fatih on Github
           </ExternalLink>
           .
         </p>
