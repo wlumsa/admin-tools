@@ -27,7 +27,7 @@ export async function POST(req: Request) {
   }
 
   const res = await openai.chat.completions.create({
-    model: 'gpt-4-0125-preview',
+    model: 'gpt-4o-2024-05-13',
     messages,
     temperature: 0.5,
     stream: true
